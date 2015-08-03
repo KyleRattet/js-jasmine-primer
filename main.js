@@ -2,6 +2,7 @@ exports.outputHelloWorld = function () {
   return "Hello, world!";
 };
 
+//example
 exports.calculate = function (amount) {
   if (amount <= 10) {
     return amount * .1;
@@ -14,5 +15,17 @@ exports.calculate = function (amount) {
   }
 };
 
+//first activity
+exports.leapYear = function (year) {
+  if (year%4 === 0) {
+    if (year%100 === 0 && year%400 !== 0) {
+      return false;
+    } else {
+      return true;
+    }
+  } else {
+    return false;
+  }
+};
 
 

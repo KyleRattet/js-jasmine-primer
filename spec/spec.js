@@ -26,3 +26,14 @@ describe('Tax Calculator', function(){
   });
 
 });
+
+describe('Leap year calculate', function(){
+
+  it('should be a leap year if true', function() {
+    expect(code.leapYear(2000)).toEqual(true);
+    expect(code.leapYear(1600)).toEqual(true);
+    expect(code.leapYear(1700)).not.toEqual(true);
+  });
+
+
+});
