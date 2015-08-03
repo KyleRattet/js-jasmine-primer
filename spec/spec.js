@@ -37,3 +37,12 @@ describe('Leap year calculate', function(){
 
 
 });
+
+describe('change to uppercase string', function(){
+
+  it('should transform array of strings into uppercase', function() {
+    expect(code.changeToUpper(['red', 'green', 'blue'])).toEqual(['RED', 'GREEN', 'BLUE']);
+  });
+
+
+});

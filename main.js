@@ -28,4 +28,16 @@ exports.leapYear = function (year) {
   }
 };
 
+//second activity
+exports.changeToUpper = function (arr) {
+ var arrUpper = [];
+
+ for (i=0;i<arr.length;i++) {
+    arr[i]=arr[i].toUpperCase();
+    arrUpper.push(arr[i]);
+    }
+  return arrUpper;
+};
+
+
 
