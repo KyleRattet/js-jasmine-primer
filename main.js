@@ -40,11 +40,15 @@ exports.changeToUpper = function (arr) {
 };
 
 exports.findGreatestStrength = function(object) {
-  if (object[0].strength > object[1].strength) {
-    return object[0];
-  } else {
-    return object[1];
-  }
+  var max = 0;
+  var strengthMax = {};
+
+  for (var i = 0; i < object.length; i++) {
+   if (object[i].strength > max) {
+      max = object[i].strength;
+      strengthMax = object[i];
+   }
+  } return strengthMax;
 };
 
 
