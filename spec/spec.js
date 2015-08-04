@@ -46,3 +46,12 @@ describe('change to uppercase string', function(){
 
 
 });
+
+describe('should return object with max strength number value', function(){
+
+  it('should return object with highest strength', function() {
+    expect(code.findGreatestStrength([{strength: 20, name: 'A'}, {strength: 10, name: 'B'}])).toEqual({strength: 20, name: 'A'});
+  });
+
+
+});

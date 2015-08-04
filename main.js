@@ -39,5 +39,26 @@ exports.changeToUpper = function (arr) {
   return arrUpper;
 };
 
+exports.findGreatestStrength = function(object) {
+  if (object[0].strength > object[1].strength) {
+    return object[0];
+  } else {
+    return object[1];
+  }
+};
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
